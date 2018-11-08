@@ -10,8 +10,8 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        {/* <Navigator/> */}
-        <TestNavigator/>
+        <Navigator/>
+        {/* <TestNavigator/> */}
       </Provider>
     );
   }

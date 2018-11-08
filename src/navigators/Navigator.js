@@ -1,15 +1,15 @@
 import React from 'react';
 import { createSwitchNavigator } from 'react-navigation';
 
-import AuthStackNavigator from './AuthStackNavigator';
 import SplashScreen from '../screens/splash/SplashScreen';
-import HomeScreen from '../screens/home/HomeScreen';
+import HomeStackNavigator from './HomeStackNavigator';
+import WalktroughSwitchNavigator from './WalktroughSwitchNavigator';
 
 const Navigator = createSwitchNavigator(
   {
     Splash: SplashScreen,
-    Auth: AuthStackNavigator,
-    Home: HomeScreen,
+    Walktrough: WalktroughSwitchNavigator,
+    Home: HomeStackNavigator,
   },
   {
     initialRouteName: 'Splash',

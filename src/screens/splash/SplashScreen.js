@@ -8,6 +8,14 @@ import {colorPrimaryDark} from '../../utils/Color';
 import imgSplashIcon from '../../assets/icons/splash.png';
 
 class SplashScreen extends Component {
+  componentDidMount() {
+    var userToken;
+    // var userToken = 'FakeToken';
+    setTimeout(()=> {
+      this.props.navigation.navigate(userToken ? 'Home' : 'Walktrough');
+    }, 3000);
+  }
+
   render() {
     return (
       <View style={styles.container}>

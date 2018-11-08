@@ -56,7 +56,7 @@ class WalktroughScreen extends Component {
   }
 
   navToAuth = () => {
-    alert("nav to auth");    
+    this.props.navigation.navigate("Home");
   }
 
   render() {
