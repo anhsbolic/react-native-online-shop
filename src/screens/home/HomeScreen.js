@@ -145,6 +145,10 @@ class HomeScreen extends React.Component {
     this.props.navigation.navigate('Product');
   }
 
+  goToScanQrCode = () => {
+    this.props.navigation.navigate('ScanQrCode');
+  }
+
   render() {
     return (
       <View style={styles.container}>
@@ -160,7 +164,7 @@ class HomeScreen extends React.Component {
             </TouchableWithoutFeedback>
           </View>
           <View style={styles.scanBarcodeContainer}>
-            <TouchableWithoutFeedback onPress={()=>alert('scan barcode')}>
+            <TouchableWithoutFeedback onPress={this.goToScanQrCode}>
               <Image source={imgScanBarcode} style={styles.imgScanBarcode}/>
             </TouchableWithoutFeedback>
           </View>

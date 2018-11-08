@@ -1,11 +1,11 @@
 import React from 'react';
 import { createStackNavigator } from 'react-navigation';
 
-import HomeScreen from '../screens/home/HomeScreen';
+import ScanQrCodeScreen from '../screens/scanqrcode/ScanQrCodeScreen';
 
 const TestNavigator = createStackNavigator(
   {
-    Test: HomeScreen
+    Test: ScanQrCodeScreen
   },
   {
     initialRouteName: 'Test',
