@@ -142,7 +142,7 @@ class HomeScreen extends React.Component {
   }
 
   goToProductDetails = (id) => {
-    this.props.navigation.navigate('ProductDetails');
+    this.props.navigation.navigate('Product');
   }
 
   render() {
