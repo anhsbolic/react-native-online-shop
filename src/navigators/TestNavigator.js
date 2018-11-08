@@ -1,11 +1,11 @@
 import React from 'react';
 import { createStackNavigator } from 'react-navigation';
 
-import SplashScreen from '../screens/splash/SplashScreen';
+import WalktroughScreen from '../screens/walktrough/WalktroughScreen';
 
 const TestNavigator = createStackNavigator(
   {
-    Test: SplashScreen
+    Test: WalktroughScreen
   },
   {
     initialRouteName: 'Test',
