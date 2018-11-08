@@ -1,0 +1,1 @@
+export { updateText } from './text'; 
