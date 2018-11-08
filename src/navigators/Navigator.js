@@ -1,16 +1,18 @@
 import React from 'react';
-import { createStackNavigator } from 'react-navigation';
+import { createSwitchNavigator } from 'react-navigation';
 
-import InputScreen from '../screens/InputScreen';
-import TextScreen from '../screens/TextScreen';
+import AuthStackNavigator from './AuthStackNavigator';
+import SplashScreen from '../screens/splash/SplashScreen';
+import HomeScreen from '../screens/home/HomeScreen';
 
-const Navigator = createStackNavigator(
+const Navigator = createSwitchNavigator(
   {
-    Input: InputScreen,
-    Text: TextScreen
+    Splash: SplashScreen,
+    Auth: AuthStackNavigator,
+    Home: HomeScreen,
   },
   {
-    initialRouteName: 'Input',
+    initialRouteName: 'Splash',
     headerMode: 'none'
   }
 );

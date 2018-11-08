@@ -1,14 +1,11 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 
-import { connect } from 'react-redux';
-
-type Props = {};
-class TextScreen extends Component<Props> {
+class HomeScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>{this.props.text}</Text>
+        <Text>HomeScreen</Text>
       </View>
     );
   }
@@ -23,11 +20,5 @@ const styles = StyleSheet.create({
   },
 });
 
-const mapStateToProps = state => {
-  return {
-    text: state.text.text
-  };
-};
-
-export default connect(mapStateToProps, null)(TextScreen);
+export default HomeScreen;
 
